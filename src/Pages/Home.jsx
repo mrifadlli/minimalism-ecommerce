@@ -1,13 +1,13 @@
-import React from "react";
-import hero1 from "../Assets/hero1.png";
-import hero2 from "../Assets/hero2.png";
-import hero3 from "../Assets/hero3.png";
+import React from 'react';
+import hero1 from '../assets/hero1.png';
+import hero2 from '../assets/hero2.png';
+import hero3 from '../assets/hero3.png';
 
 const Home = () => {
   return (
-    <div className="mx-auto bg-[#eeeeee] px-6 lg:px-12 mb-3">
-      <div className="mt-0 mx-3">
-        <img src={hero2} alt="" className="" />
+    <div className="mx-auto bg-[#eeeeee] px-6 lg:px-12 mb-3 ">
+      <div className=" mt-0 mx-3">
+        <img src={hero2} alt="" className="w-full" />
       </div>
       <div className="flex justify-between">
         <div className="w-3/5 mt-2 mx-3">
