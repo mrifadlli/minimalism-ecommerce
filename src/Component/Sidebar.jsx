@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { TbSquareRoundedArrowLeftFilled } from "react-icons/tb";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = ({ isOpen, handleClose }) => {
   const [dropDown, setDropDown] = useState(false);
+
+  
   return (
     <div
       className={`${
@@ -18,30 +21,38 @@ const Sidebar = ({ isOpen, handleClose }) => {
       </div>
       <div className="h-screen">
         <ul className="mt-8 text-lg cursor-pointer">
+        <NavLink to="/product" className="text-center">
           <li className="mb-3 border-4 text-center w-full rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
-            <a href="#product" className="text-center">
-              Product
-            </a>
+            Product
           </li>
+        </NavLink>
           <li
             className="mb-3 border-4 text-center w-full rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
             onClick={() => setDropDown(!dropDown)}
           >
-            <a href="#colection" className="">
+            <button href="#colection" className="">
               Colection
-            </a>
+            </button>
           </li>
-          <ul className={`${dropDown ? `block` : `hidden`} w-full px-8`}>
-            <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
-              T-Shirt
-            </li>
-            <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
-              Oversized
-            </li>
-            <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
-              Jacket
-            </li>
-          </ul>
+          {dropDown &&  
+              <ul >
+                <NavLink to="/product/t-shirt">
+                  <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
+                  T-shirt
+                  </li>
+                </NavLink> 
+                <NavLink to="/product/oversized">
+                  <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
+                    Oversized
+                  </li>
+                </NavLink>
+                <NavLink to="/product/jacket">
+                  <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
+                    Jacket
+                  </li>
+                </NavLink>
+              </ul>
+          }
         </ul>
         <div className="flex mx-auto mt-9">
           <button className="w-full border-2 border-black mx-2 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-lg py-1">
