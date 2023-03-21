@@ -16,12 +16,12 @@ const FilterProduct = () => {
                                         T-Shirt
                                     </li>
                                 </NavLink>
-                                <NavLink to="/product/t-shirt">
+                                <NavLink to="/product/oversized">
                                     <li className='bg-white p-3 rounded-xl mb-2'>
                                         OverSized
                                     </li>
                                 </NavLink>
-                                <NavLink to="/product/t-shirt">
+                                <NavLink to="/product/jacket">
                                     <li className='bg-white p-3 rounded-xl mb-2'>
                                         Jackets
                                     </li>
