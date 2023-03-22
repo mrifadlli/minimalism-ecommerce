@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#eeeeee]">
+    <div className="bg-[#eeeeee] w-full fixed">
       <div className="flex justify-between mx-auto w-[92%] py-2 px-2">
         <button
           title="Navigation"
@@ -26,14 +26,13 @@ const Navbar = () => {
           <BsFillGridFill className="cursor-pointer text-lg" />
         </button>
         <div className="text-center items-center">
-          <Link to="/">
-            <h2
-              className="text-2xl font-extralight px-3 border-b-4 border-t-4 cursor-pointer"
-              title="Home"
-              onClick={handleClose}
-            >
-              Mininalism
-            </h2>
+          <Link 
+            to="/"
+            className="text-2xl font-extralight px-3 border-b-4 border-t-4 cursor-pointer"
+            title="Home"
+            onClick={handleClose}
+          >
+            Mininalism
           </Link>
         </div>
         <div className="flex justify-between items-center gap-4">
