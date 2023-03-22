@@ -2,6 +2,7 @@ import React from "react";
 import hero1 from "../Assets/hero1.png";
 import hero2 from "../Assets/hero2.png";
 import hero3 from "../Assets/hero3.png";
+import { FaShippingFast } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -19,6 +20,16 @@ const Home = () => {
             Shoping Now
           </button>
         </div>
+      </div>
+      <div className="grid grid-cols-2 lg:grid-cols-4 mx-3 border-black my-8 border-t-4 border-b-4 text-center items-center">
+        <div className="p-16 border-r-4 lg:border-r-4">
+          <div className="flex justify-center mb-2"><FaShippingFast className="text-4xl"/></div>
+          <h3 className="text-sm">Fast, Free Shipping</h3>
+          <span clas>Free Shipping on every order nationwide</span>
+        </div>
+        <div className="p-16 lg:border-r-4">test1</div>
+        <div className="p-16 border-r-4 border-t-4 lg:border-r-4">test1</div>
+        <div className="p-16 border-t-4">test1</div>
       </div>
     </div>
   );
