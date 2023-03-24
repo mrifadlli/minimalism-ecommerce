@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import { TbSquareRoundedArrowLeftFilled } from "react-icons/tb";
 
-const Sidebar = ({ isOpen, handleClose }) => {
-  const [dropDown, setDropDown] = useState(false);
+const Sidebar = ({ isOpen, handleClose, dropDown, setDropDown }) => {
   return (
     <div
       className={`${
         isOpen ? `left-0` : `-left-full`
-      } w-full top-0 fixed bg-[#eeeeee] h-full shadow-2xl md:w-[35vw] xl:max-w-[27vw] transition-all duration-500 y-20 px-4 lg:px-[35px]`}
+      } w-full top-0 fixed bg-[#eeeeee] h-full shadow-2xl md:w-[35vw] xl:max-w-[27vw] transition-all duration-500 z-20 px-4 lg:px-[35px]`}
     >
       <div className="flex mt-4 justify-between">
         <h3 className="text-xl">Hello, there.</h3>
@@ -18,29 +18,33 @@ const Sidebar = ({ isOpen, handleClose }) => {
       </div>
       <div className="h-screen">
         <ul className="mt-8 text-lg cursor-pointer">
-          <li className="mb-3 border-4 text-center w-full rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
-            <a href="#product" className="text-center">
-              Product
-            </a>
-          </li>
+          <Link to={"/products"} onClick={handleClose}>
+            <li className="mb-3 border-4 text-center w-full rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
+              Products
+            </li>
+          </Link>
           <li
             className="mb-3 border-4 text-center w-full rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
             onClick={() => setDropDown(!dropDown)}
           >
-            <a href="#colection" className="">
-              Colection
-            </a>
+            Collection
           </li>
           <ul className={`${dropDown ? `block` : `hidden`} w-full px-8`}>
-            <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
-              T-Shirt
-            </li>
-            <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
-              Oversized
-            </li>
-            <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
-              Jacket
-            </li>
+            <Link to={"/products/tshirt"} onClick={handleClose}>
+              <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
+                T-Shirt
+              </li>
+            </Link>
+            <Link to={"/products/oversized"} onClick={handleClose}>
+              <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
+                Oversized
+              </li>
+            </Link>
+            <Link to={"/products/jacket"} onClick={handleClose}>
+              <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
+                Jacket
+              </li>
+            </Link>
           </ul>
         </ul>
         <div className="flex mx-auto mt-9">
