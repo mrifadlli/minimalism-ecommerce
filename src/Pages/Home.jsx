@@ -1,17 +1,18 @@
-import React from "react";
-import hero1 from "../Component/assets/hero1.png";
-import hero2 from "../Component/assets/hero2.png";
-import hero3 from "../Component/assets/hero3.png";
-import { FaShippingFast } from "react-icons/fa";
-import { GiReturnArrow } from "react-icons/gi";
-import { IoLeafSharp } from "react-icons/io5";
-import {BsInstagram} from 'react-icons/bs';
+import React from 'react';
+import { FaShippingFast } from 'react-icons/fa';
+import { GiReturnArrow } from 'react-icons/gi';
+import { IoLeafSharp } from 'react-icons/io5';
+import { BsInstagram } from 'react-icons/bs';
+import hero1 from '../Component/assets/hero1.png';
+import hero2 from '../Component/assets/hero2.png';
+import hero3 from '../Component/assets/hero3.png';
+import DetailProduct from '../Component/detail_Product/detail.product';
 
 const Home = () => {
   return (
-    <div className="mx-auto bg-[#eeeeee] px-6 lg:px-12 mt-10 lg:mt-14">
+    <div className="mx-auto bg-[#eeeeee] px-6 lg:px-12 mb-3">
       <div className="mt-0 mx-3">
-        <img src={hero2} alt="hero2" className="" />
+        <img src={hero2} alt="" className="" />
       </div>
       <div className="flex justify-between">
         <div className="w-3/5 mt-2 mx-3">
@@ -30,9 +31,7 @@ const Home = () => {
             <FaShippingFast className="text-4xl" />
           </div>
           <h3 className="text-base">Fast, Free Shipping</h3>
-          <span className="text-xs">
-            Free Shipping on every order nationwide
-          </span>
+          <span className="text-xs">Free Shipping on every order nationwide</span>
         </div>
         <div className="lg:p-16 p-9 lg:border-r-4">
           <div className="flex justify-center mb-2">
@@ -49,7 +48,7 @@ const Home = () => {
           <span className="text-xs">Industry ecosystem care</span>
         </div>
         <div className="lg:p-16 p-9 border-t-4">
-        <div className="flex justify-center mb-2">
+          <div className="flex justify-center mb-2">
             <BsInstagram className="text-4xl" />
           </div>
           <h3 className="text-base">Follow us</h3>
