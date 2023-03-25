@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { iklanProduct, dataProduct } from "../data/data.js";
-import IklanProduct from "../Component/iklan_Product/iklanProduct";
-import FilterProduct from "../Component/product/filter_product/filterProduct";
-import FiturProduct from "../Component/product/fitur_product/fiturProduct";
+import React, { useState } from 'react';
+import { iklanProduct, dataProduct } from '../data/data.js';
+import IklanProduct from '../Component/iklan_Product/iklanProduct';
+import FilterProduct from '../Component/product/filter_product/filterProduct';
+import FiturProduct from '../Component/product/fitur_product/fiturProduct';
 
 const ProductPage = () => {
   const [currentProduct, setCurrentProduct] = useState(dataProduct);
@@ -15,14 +15,9 @@ const ProductPage = () => {
           <div className="mb-20">
             <h1 className="mb-7 text-3xl mx-9 my-20">Product </h1>
             {iklanProduct
-              .filter((items) => items.kategori === "product")
+              .filter((items) => items.kategori === 'product')
               .map((items, index) => (
-                <IklanProduct
-                  image={items.image}
-                  title={items.title}
-                  subtitle={items.subtitle}
-                  key={index}
-                />
+                <IklanProduct image={items.image} title={items.title} subtitle={items.subtitle} key={index} />
               ))}
           </div>
           <div className="lg:flex lg:justify-center lg:flex-row ">
@@ -34,16 +29,7 @@ const ProductPage = () => {
                         sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4  gap-5 p-5"
             >
               {currentProduct.map((value, index) => {
-                return (
-                  <FiturProduct
-                    image={value.image}
-                    nama={value.nama}
-                    desc={value.desc}
-                    price={value.harga}
-                    like={value.like}
-                    key={index}
-                  />
-                );
+                return <FiturProduct image={value.image} nama={value.nama} desc={value.desc} price={value.harga} like={value.like} id={value.id} key={index} />;
               })}
             </div>
           </div>
