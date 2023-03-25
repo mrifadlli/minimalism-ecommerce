@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import FilterPrice from "./filter.price";
-import FilterSize from "./filter.size";
+import FilterPrice from "./filterPrice";
+import FilterSize from "./filterSize";
 
 const FilterProduct = () => {
   return (

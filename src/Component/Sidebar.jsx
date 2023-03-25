@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen, handleClose, dropDown, setDropDown }) => {
             </Link>
             <Link to={"/products/jacket"} onClick={handleClose}>
               <li className="mb-2 border-4 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out items-center text-center">
-                Jacket
+                Outwear
               </li>
             </Link>
           </ul>
