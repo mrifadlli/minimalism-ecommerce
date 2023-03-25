@@ -7,10 +7,10 @@ const IklanProduct = ({ image, title, subtitle }) => {
         className="text-center flex justify-center flex-col lg:flex-row
             items-center lg:text-left gap-7 bg-[#eeeeee] p-7"
       >
-        <div className="w-1/2">
+        <div className="w-3/5">
           <img src={image} alt="iklan kaos " className="" />
         </div>
-        <div className="w-1/2">
+        <div className="w-2/5">
           <h1 className="text-3xl font-semibold mb-2">{title}</h1>
           <h3>{subtitle}</h3>
         </div>

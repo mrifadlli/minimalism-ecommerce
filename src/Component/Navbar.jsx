@@ -32,7 +32,7 @@ const Navbar = () => {
             title="Home"
             onClick={handleClose}
           >
-            Mininalism
+            Minimalism
           </Link>
         </div>
         <div className="flex justify-between items-center gap-4">

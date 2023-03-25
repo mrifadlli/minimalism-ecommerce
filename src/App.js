@@ -2,10 +2,10 @@ import React from "react";
 import { Navbar, Footer, Sidebar } from "./Component";
 import Home from "./Pages/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ProductPage from "./Pages/Product.page";
-import TShirtProduct from "./Component/product/items_product/tShirt.product";
-import JacketProduct from "./Component/product/items_product/jacket.product";
-import OversizedProduct from "./Component/product/items_product/oversized.product";
+import ProductPage from "./Pages/productPage";
+import TShirtProduct from "./Component/product/items_product/tshirtProduct";
+import JacketProduct from "./Component/product/items_product/jacketProduct";
+import OversizedProduct from "./Component/product/items_product/oversizedProduct";
 
 const App = () => {
   return (
