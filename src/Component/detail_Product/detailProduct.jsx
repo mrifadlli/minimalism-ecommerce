@@ -11,7 +11,7 @@ const DetailProduct = () => {
   const images = [dataProduct[id - 1].image, dataProduct[id].image];
 
   return (
-    <div className="px-5 my-0 bg-[#eeeeee]  pt-10 md:h-screen">
+    <div className="px-5 my-0 bg-[#eeeeee] pt-32 md:h-screen">
       <div className="mx-0 my-auto ">
         <div className="flex flex-col justify-center gap-24 mx-auto px-10 md:px-28 md:flex-row">
           <div className="left md:flex md:flex-row-reverse bg-black gap-2 rounded-md bg-opacity-5 flex-shrink-0 md:w-[600px]  md:h-[600px]">

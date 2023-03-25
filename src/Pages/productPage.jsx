@@ -5,7 +5,7 @@ import FilterProduct from '../Component/product/filter_product/filterProduct';
 import FiturProduct from '../Component/product/fitur_product/fiturProduct';
 
 const ProductPage = () => {
-  const [currentProduct, setCurrentProduct] = useState(dataProduct);
+  const [currentProduct] = useState(dataProduct);
 
   console.log(dataProduct);
   return (

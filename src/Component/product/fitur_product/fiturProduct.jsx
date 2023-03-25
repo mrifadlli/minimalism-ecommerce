@@ -9,9 +9,9 @@ const FiturProduct = ({ id, image, nama, desc, price, like }) => {
   return (
     <>
       <div className="bg-white rounded-lg shadow-lg">
-        <Link to={`/product/${id}`}>
-          <div>
-            <img src={image} alt="product" className="rounded-t-lg" />
+        <Link to={`/products/${id}`}>
+          <div className="h-4/6 w-full">
+            <img src={image} alt="product" className="w-full h-full object-cover rounded-t-lg" />
           </div>
         </Link>
         <div className="m-2">

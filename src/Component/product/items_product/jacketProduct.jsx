@@ -1,15 +1,13 @@
-import React, { useState } from "react";
-import { iklanProduct, dataProduct } from "../../../data/data.js";
-import IklanProduct from "../../iklan_Product/iklanProduct";
-import FilterProduct from "../filter_product/filterProduct";
-import FiturProduct from "../fitur_product/fiturProduct";
+import React, { useState } from 'react';
+import { iklanProduct, dataProduct } from '../../../data/data.js';
+import IklanProduct from '../../iklan_Product/iklanProduct';
+import FilterProduct from '../filter_product/filterProduct';
+import FiturProduct from '../fitur_product/fiturProduct';
 
 const JacketProduct = () => {
-  const [currentProduct, setCurrentProduct] = useState(dataProduct);
+  const [currentProduct] = useState(dataProduct);
 
-  const filterJacket = currentProduct.filter(
-    (value) => value.kategori === "jacket"
-  );
+  const filterJacket = currentProduct.filter((value) => value.kategori === 'jacket');
 
   return (
     <>
@@ -18,14 +16,9 @@ const JacketProduct = () => {
           <div className="mb-20">
             <h1 className="mb-7 text-3xl mx-9 my-20">Jackets</h1>
             {iklanProduct
-              .filter((items) => items.kategori === "jacket")
+              .filter((items) => items.kategori === 'jacket')
               .map((items, index) => (
-                <IklanProduct
-                  image={items.image}
-                  title={items.title}
-                  subtitle={items.subtitle}
-                  key={index}
-                />
+                <IklanProduct image={items.image} title={items.title} subtitle={items.subtitle} key={index} />
               ))}
           </div>
           <div className="lg:flex lg:justify-center lg:flex-row ">
@@ -37,14 +30,7 @@ const JacketProduct = () => {
                         sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4  gap-5 p-5"
             >
               {filterJacket.map((value, index) => (
-                <FiturProduct
-                  image={value.image}
-                  nama={value.nama}
-                  desc={value.desc}
-                  price={value.harga}
-                  like={value.like}
-                  key={index}
-                />
+                <FiturProduct image={value.image} nama={value.nama} desc={value.desc} price={value.harga} like={value.like} key={index} />
               ))}
             </div>
           </div>

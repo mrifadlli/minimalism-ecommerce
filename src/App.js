@@ -6,6 +6,7 @@ import ProductPage from './Pages/productPage';
 import TShirtProduct from './Component/product/items_product/tshirtProduct';
 import JacketProduct from './Component/product/items_product/jacketProduct';
 import OversizedProduct from './Component/product/items_product/oversizedProduct';
+import DetailProduct from './Component/detail_Product/detailProduct';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductPage />} />
+          <Route path="/products/:id" element={<DetailProduct />} />
           <Route path="/products/tshirt" element={<TShirtProduct />} />
           <Route path="/products/jacket" element={<JacketProduct />} />
           <Route path="/products/oversized" element={<OversizedProduct />} />

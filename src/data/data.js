@@ -27,25 +27,25 @@ export const navigation = [
 
 export const iklanProduct = [
   {
-    image: '../assets/hero1.png',
+    image: '../assets/IklanProduct.png',
     title: 'Minimalism',
     subtitle: 'Tampil nyaman untuk berbagai kebutuhan. Jelajahi T-Shirt Pria disini',
     kategori: 'product',
   },
   {
-    image: '../assets/IklanKaos.jpg',
+    image: '../assets/hero1.png',
     title: 'T-SHIRT Polos',
     subtitle: 'Tampil nyaman untuk berbagai kebutuhan. Jelajahi T-Shirt Pria disini',
     kategori: 't-shirt',
   },
   {
-    image: '/assets/jacket/jacket4.jfif',
+    image: '/assets/IklanJacket.png',
     title: 'Jacket OOTD',
     subtitle: 'Tampil nyaman untuk berbagai kebutuhan. Jelajahi Jacket Pria disini',
     kategori: 'jacket',
   },
   {
-    image: '../assets/oversized/IklanOversized.jfif',
+    image: '../assets/hero2.png',
     title: 'Oversized',
     subtitle: 'Tampil nyaman untuk berbagai kebutuhan. Jelajahi Jacket Pria disini',
     kategori: 'oversized',
