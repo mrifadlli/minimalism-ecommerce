@@ -12,7 +12,7 @@ import { iklanProduct } from "../data/data";
 
 const Home = () => {
   return (
-    <div className="mx-auto bg-[#eeeeee] px-6 pt-12 lg:px-12 mb-3">
+    <div className="mx-auto bg-[#eeeeee] px-6 pt-12 lg:px-12  pb-7">
       <div className="mt-0 mx-3">
         <img src={hero2} alt="" className="w-full h-full object-cover" />
       </div>
