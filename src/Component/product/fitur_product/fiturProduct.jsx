@@ -19,7 +19,7 @@ const FiturProduct = ({ id, image, nama, desc, price, like }) => {
           <p className="text-xs">{desc}</p>
           <div className="flex justify-between items-center mt-2 mr-2">
             <div>
-              <p> Rp{price}</p>
+              <p> Rp {price}</p>
               <div className="flex justify-center items-center mt-2 gap-2">
                 <BiLike cursor="pointer" size="20px" onClick={() => setTambah(tambah + 1)} />
                 <p>Like {tambah} </p>

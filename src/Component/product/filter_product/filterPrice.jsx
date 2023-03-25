@@ -2,7 +2,7 @@ import React from 'react';
 import {IoIosArrowForward,IoIosArrowBack} from 'react-icons/io';
 
 
-const FilterPrice = ({currentProduct, setCurrentProduct,activeJacket,setActiveJacket}) => {
+const FilterPrice = () => {
 
 
 

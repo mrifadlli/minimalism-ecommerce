@@ -30,7 +30,7 @@ const JacketProduct = () => {
                         sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4  gap-5 p-5"
             >
               {filterJacket.map((value, index) => (
-                <FiturProduct image={value.image} nama={value.nama} desc={value.desc} price={value.harga} like={value.like} key={index} />
+                <FiturProduct image={value.image} nama={value.nama} desc={value.desc} price={value.harga} id={value.id} like={value.like} key={index} />
               ))}
             </div>
           </div>

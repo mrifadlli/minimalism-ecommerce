@@ -25,7 +25,7 @@ const DetailProduct = () => {
           </div>
           <div className="right w-full flex flex-col pt-5 gap-5 shadow-2xl rounded-xl px-2 py-1 mb-10 md:px-8 md:py-4 md:w-1/2 ">
             <span className="name text-xl leading-7 mb-5 md:text-2xl md:leading-8 font-semibold">{dataProduct[id - 1].nama}</span>
-            <span className="price text-2xl leading-8 mb-5 ">{dataProduct[id - 1].harga}</span>
+            <span className="price text-2xl leading-8 mb-5 ">Rp {dataProduct[id - 1].harga}</span>
             <span className="desc text-sm leading-5 mb-5 text-gray-700 md:text-base  md:leading-6 md:mb-5">{dataProduct[id - 1].desc}</span>
 
             <div className="cart-button md:mt-3">
