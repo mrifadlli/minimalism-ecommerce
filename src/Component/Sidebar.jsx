@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TbSquareRoundedArrowLeftFilled } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ isOpen, handleClose }) => {
   const [dropDown, setDropDown] = useState(false);
@@ -44,9 +45,11 @@ const Sidebar = ({ isOpen, handleClose }) => {
           </ul>
         </ul>
         <div className="flex mx-auto mt-9">
-          <button className="w-full border-2 border-black mx-2 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-lg py-1">
-            Login
-          </button>
+          <Link to={"/Login"} onClick={handleClose}>
+            <button className="w-full border-2 border-black mx-2 rounded-full hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-lg py-1">
+              Login
+            </button>
+          </Link>
         </div>
       </div>
     </div>
