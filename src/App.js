@@ -6,6 +6,7 @@ import ProductPage from './Pages/Product.page';
 import TShirtProduct from './Component/product/items_product/tShirt.product';
 import JacketProduct from './Component/product/items_product/jacket.product';
 import OversizedProduct from './Component/product/items_product/oversized.product';
+import DetailProduct from './Component/detail_Product/detail.product';
 
 const App = () => {
   return (
@@ -14,11 +15,11 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductPage />} />
           <Route path="/products/tshirt" element={<TShirtProduct />} />
           <Route path="/products/jacket" element={<JacketProduct />} />
           <Route path="/products/oversized" element={<OversizedProduct />} />
+          <Route path="/products/:id" element={<DetailProduct />} />
         </Routes>
         <Sidebar />
         <Footer />

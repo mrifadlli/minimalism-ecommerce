@@ -6,6 +6,7 @@ import { BsInstagram } from 'react-icons/bs';
 import hero1 from '../Component/assets/hero1.png';
 import hero2 from '../Component/assets/hero2.png';
 import hero3 from '../Component/assets/hero3.png';
+import DetailProduct from '../Component/detail_Product/detail.product';
 
 const Home = () => {
   return (
