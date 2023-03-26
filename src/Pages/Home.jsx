@@ -7,7 +7,7 @@ import { GiReturnArrow } from "react-icons/gi";
 import { IoLeafSharp } from "react-icons/io5";
 import { BsInstagram } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import IklanProduct from "../Component/iklan_Product/iklanProduct";
+import IklanProduct from "../Component/iklanProduct/iklanProduct";
 import { iklanProduct } from "../data/data";
 
 const Home = () => {
